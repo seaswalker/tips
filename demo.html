@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="tips.js"></script>
+        <script type="text/javascript">
+            function message() {
+                console.log(Tips);
+                Tips.showMessage("这是常规信息", {time: 10});
+            }
+            function success() {
+                Tips.showSuccess("这是success信息");
+            }
+            function error() {
+                Tips.showError("这是error信息");
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="message();">信息</button>
+        <button onclick="success();">成功</button>
+        <button onclick="error();">警告</button>
+    </body>
+</html>
